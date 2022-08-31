@@ -40,14 +40,14 @@ public class TestMounthServise {
     @Test
     public void summMountMinMiddleSaleTest(){
 
-        int expected = 56;
+        int expected = 5;
         int actual = statsService.summMountMinMiddleSale(month);
         Assertions.assertEquals(expected,actual);
     }
     @Test
     public void summMountBigMiddleSale(){
 
-        int expected = 94;
+        int expected = 5;
         int actual = statsService.summMountBigMiddleSale(month);
         Assertions.assertEquals(expected,actual);
     }

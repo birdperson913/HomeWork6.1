@@ -42,7 +42,7 @@ public class StatsService {
     public int summMountMinMiddleSale(int[] mounth) {
         int summ = 0;
         for (int i = 0; i < mounth.length; i++) {
-            if (mounth[i] < averageAmount(mounth)) summ = summ + mounth[i];
+            if (mounth[i] < averageAmount(mounth)) { summ++;}
 
         }
         return summ;
@@ -51,7 +51,7 @@ public class StatsService {
     public int summMountBigMiddleSale(int[] mounth) {
         int summ = 0;
         for (int i = 0; i < mounth.length; i++) {
-            if (mounth[i] > averageAmount(mounth)) summ = summ + mounth[i];
+            if (mounth[i] > averageAmount(mounth)) summ++;
 
         }
         return summ;
